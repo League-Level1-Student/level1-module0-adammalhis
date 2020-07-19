@@ -17,23 +17,10 @@ public class CutenessTv implements ActionListener {
 	JFrame frame= new JFrame();
 	JPanel panel= new JPanel();
 	
-
-	
-	
-	
 public static void main(String[] args) {
-	
-	
 new CutenessTv().buttons();
-
-	
-	
 }
-
-	
-
-	public void buttons() {
-		
+public void buttons() {
 		frame.setVisible(true);
 		button1.setText("show ducks");
 		button2.setText("show frog");
@@ -46,12 +33,7 @@ new CutenessTv().buttons();
 		panel.add(button3);
 		frame.add(panel);
 		frame.pack();
-		
-		
-	
-	}
-	
-	
+		}
 	
 	void showDucks() {
 	     playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
@@ -88,7 +70,19 @@ new CutenessTv().buttons();
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
+		if (button1 == e.getSource()) {
+			showDucks();
+			System.out.println("DUCKS");
+		}
+		else if (button2 == e.getSource()) {
+			showFrog();
+			System.out.println("FROG");
+		}
+		else {
+			showFluffyUnicorns();
+		System.out.println("Unicorns");
+		}
+	
 	}
 
 

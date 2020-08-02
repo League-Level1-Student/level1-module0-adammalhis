@@ -18,7 +18,7 @@ void draw() {
   fill(0, 0, 255);
   stroke(0, 0, 255);
   ellipse(x, y, 50, 50);
- y=y+10;
+ y=y+20;
  fill(255, 255, 255);
  rect( mouseX, mouseY, 70, 100);
  checkCatch();
